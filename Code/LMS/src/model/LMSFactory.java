@@ -9,6 +9,7 @@ import dal.DALManager;
 import dal.RecordsAdder;
 import dal.RecordsMapper;
 import dal.RecordsModifier;
+import dal.Verifyer;
 import model.dto.Message;
 import static model.dto.MessageType.Error;
 import model.dto.Response;
@@ -17,7 +18,7 @@ import model.dto.Response;
  *
  * @author Mukhtiar
  */
-public class SMSFactory {
+public class LMSFactory {
 
     static DALManager getInstanceOfDALManager() {
         return new DALManager(new RecordsMapper());
@@ -40,6 +41,10 @@ public class SMSFactory {
     }
     public static Message getInstanceOfMessage() {
         return new Message("asd",Error);
+    }
+
+    public static Verifyer getInstanceOfVerifyer() {
+       return new Verifyer();
     }
     
 }

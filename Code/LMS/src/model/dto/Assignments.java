@@ -4,15 +4,15 @@
  */
 package model.dto;
 
+import java.util.Date;
+
 /**
  *
  * @author Mansoor
  */
-public class AdminDTO {
-       public String Id;
-    public String FirstName;
-    public String LastName;
-    public String Username;
-    public String Email;
-    public String Password;
+public class Assignments {
+    public String file;
+    public Date uploadDate;
+    public Date deadline;
+    public String URL;
 }

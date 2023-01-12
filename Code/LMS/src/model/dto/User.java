@@ -8,11 +8,8 @@ package model.dto;
  *
  * @author Mansoor
  */
-public class AdminDTO {
-       public String Id;
-    public String FirstName;
-    public String LastName;
-    public String Username;
-    public String Email;
-    public String Password;
+public class User {
+    public String username;
+    public String password;
+    public String type;
 }
